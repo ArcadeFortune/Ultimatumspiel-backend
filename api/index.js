@@ -1,6 +1,6 @@
 // const express = require("express");
 // const webserver = express()
-//   .use((req, res) => res.sendFile("./a.html", { root: __dirname }))
+//   .use((req, res) => res.send("./a.html", { root: __dirname }))
   
 // const { WebSocketServer } = require("ws");
 // const sockserver = new WebSocketServer({ port: 443 });
@@ -24,7 +24,7 @@
 // webserver.listen(3000, () => console.log(`Listening on ${3000}`));
 
 
-const app = require('express')()
+const app = require('express')().use((req, res) => res.end(`Hello! Go to item: <a hrea>`))
 
 
 const { WebSocketServer } = require("ws");

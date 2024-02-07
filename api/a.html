@@ -10,7 +10,7 @@
   <div id="messages"></div>
   <script>
     const webSocket = new WebSocket('ws://localhost:443/api/');
-    // const webSocket = new WebSocket('ws://ultimatumspiel-backend.vercel.app/api/index');
+    // const webSocket = new WebSocket('wss://ultimatumspiel-backend.vercel.app/api/index/');
     webSocket.onmessage = (event) => {
       console.log(event)
       document.getElementById('messages').innerHTML += 
