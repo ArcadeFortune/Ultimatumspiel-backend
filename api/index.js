@@ -24,7 +24,7 @@
 // webserver.listen(3000, () => console.log(`Listening on ${3000}`));
 
 
-const app = require('express')().use((req, res) => res.sendFile("../a.html", { root: __dirname }));
+const app = require('express')().use((req, res) => res.sendFile("./a.html", { root: __dirname }));
 
 
 const { WebSocketServer } = require("ws");
